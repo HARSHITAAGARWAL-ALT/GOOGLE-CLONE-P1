@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-Search</title>
+    
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* For header styling  */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 30px;
+            align-items: center;
+        }
+
+        .header a {
+            margin-right: 10px;
+            font-size: 18px;
+            color: dimgrey;
+            text-decoration: inherit;
+        }
+
+        .header:hover {
+            text-decoration: underline;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            min-width: 13vw;
+            justify-content: space-between;
+        }
+
+        .header-right .header-apps {
+            margin-right: 10px;
+        }
+
+        .mainbody {
+            /* flex: 1; */
+            display: flex;
+            margin-top: 12%;
+            flex-direction: column;
+        }
+
+        .mainbody img {
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .search-input {
+            display: flex;
+            align-items: center;
+            border: 3px solid grey;
+            height: 30px;
+            padding: 10px 20px;
+            border-radius: 500px;
+            width: 75vw;
+            margin: 0 auto;
+            margin-top: 40px;
+            max-width: 560px;
+            border: 1px solid rgb(162, 164, 167);
+        }
+
+        .search-input input {
+            flex: 1;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+        }
+
+        .search-input .material-icons {
+            color: rgb(100, 100, 100);
+        }
+
+        .search-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-buttons button {
+            margin: 3px 6px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            background-color: rgb(219, 221, 223);
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- Importing google font icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="googleclone.css"> -->
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a href="#">About</a>
+            <a href="#">Store</a>
+        </div>
+
+        <div class="header-right">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <span class="material-icons header-apps"> apps </span>
+            <span class="material-icons"> account_circle </span>
+
+        </div>
+    </div>
+
+    <!-- Main Body Starts  -->
+
+    <div class="mainbody">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="GoogleLogo">
+
+        <!-- Search Bar starts  -->
+
+        <div class="search">
+            <div class="search-input">
+                <span class="material-icons"> search </span>
+                <input type="text">
+                <span class="material-icons"> mic </span>
+            </div>
+
+            <div class="search-buttons">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
